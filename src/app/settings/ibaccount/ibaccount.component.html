@@ -1,0 +1,92 @@
+<button (click)="showModal()">Show Alert</button>
+
+<sm-modal title="Link your IB Account" class="" icon="" #myModalNormal>
+
+    <modal-content>
+
+        <div class="ui three steps">
+
+            <div class="active step">
+
+                <div class="content">
+
+                    <div class="title">IB Login</div>
+                    <div class="description">Configure your IB login credentials</div>
+
+                </div>
+
+            </div>
+
+            <div class="disabled step">
+
+                <div class="content">
+
+                    <div class="title">Verify Passcode</div>
+                    <div class="description">Enter your pin number</div>
+
+                </div>
+
+            </div>
+
+            <div class="disabled step">
+
+                <div class="content">
+
+                    <div class="title">Confirm Settings</div>
+                    <div class="description">Review your settings & save</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="ui form" style="width: 400px">
+
+            <div class="required inline field">
+
+                <label>Username</label>
+                <input type="text" placeholder="IB Username">
+
+            </div>
+
+            <div class="required inline field">
+
+                <label>Password</label>
+                <input type="text" placeholder="IB Password">
+
+            </div>
+
+            <div class="inline field">
+
+                <div class="ui checkbox">
+
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label>Paper Mode</label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </modal-content>
+
+    <modal-actions>
+
+        <div class="ui buttons">
+
+            <button class="ui button" (click)="myModalNormal.hide()">Cancel</button>
+
+            <button class="ui right labeled green icon button">
+              <i class="right arrow icon"></i>
+              Next
+            </button>
+
+        </div>
+
+    </modal-actions>
+
+</sm-modal>

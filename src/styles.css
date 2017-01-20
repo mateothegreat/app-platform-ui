@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    
+    background: #e1e1e1 !important;
+}
+
+.ui .modal .header, .ui .modal .actions {
+    
+    background: rgba(0,0,0,.05) !important;
+    
+}
+
+.ui .modal .actions button {
+ 
+     margin-left: 5px;
+        
+}
