@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router, Resolve, RouterStateSnapshot,
+         ActivatedRouteSnapshot } from '@angular/router';
 
 import { NgSemanticModule } from "../../ngSemantic/ng-semantic"
 
