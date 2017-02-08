@@ -5,7 +5,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Router, Resolve, RouterStateSnapshot,
          ActivatedRouteSnapshot } from '@angular/router';
 
-import { NgSemanticModule } from "../../ngSemantic/ng-semantic"
+import { NgSemanticModule } from "ng-semantic/ng-semantic"
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
