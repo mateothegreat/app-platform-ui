@@ -10,7 +10,7 @@ import {
 })
 export class DataTableComponent implements OnChanges {
 
-  @Input() source: any;
+  @Input() datasource:Array<any> = [];
   @Input() settings: Object = {};
 
   @Output() public rowSelect: EventEmitter<any> = new EventEmitter<any>();
