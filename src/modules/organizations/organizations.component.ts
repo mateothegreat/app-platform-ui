@@ -12,11 +12,11 @@ export class OrganizationsComponent implements OnInit {
     
     datasource:Array<any> = [];
     
-    constructor(private _platformService: PlatformServerSDKService) { 
+    // constructor(private _platformService: PlatformServerSDKService) { 
         
-        console.log('OrganizationsComponent.constructor: ' + _platformService);
+    //     console.log('OrganizationsComponent.constructor: ' + _platformService);
 
-    }
+    // }
     
     ngOnInit() {
     
