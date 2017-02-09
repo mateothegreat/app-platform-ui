@@ -15,7 +15,7 @@ export const routes: Routes = [
     { path: 'settings',         component: SettingsComponent, children: SettingsRoutes },
     { path: 'desktop',          component: DesktopComponent },
     
-    { path: 'customers',        loadChildren: './modules/organizations/organizations.module#OrganizationsModule' }
+    { path: 'customers',        loadChildren: '../modules/organizations/organizations.module#OrganizationsModule' }
     
 
 //   { path: '**', component: PageNotFoundComponent }
