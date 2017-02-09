@@ -17,6 +17,8 @@ import { IBAccountComponent } from './settings/ibaccount/ibaccount.component';
 
 import { routes } from './app.routes';
 import { SettingsOverviewComponent } from './settings/settings-overview/settings-overview.component';
+import { PlatformServerSDKModule }              from '../modules/platform-server-sdk/platform-server-sdk.module';
+import { SDKBrowserModule }              from '../modules/platform-server-sdk/lib/serversdk/index';
 
 @NgModule({
 
@@ -35,6 +37,7 @@ import { SettingsOverviewComponent } from './settings/settings-overview/settings
 
     imports: [
         
+        PlatformServerSDKModule,
         RouterModule.forRoot(routes),
 
         BrowserModule,
