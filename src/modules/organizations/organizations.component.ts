@@ -1,5 +1,5 @@
 import { Component, OnInit }                    from '@angular/core';
-import { PlatformServerSDKService }             from '../platform-server-sdk';
+// import { PlatformServerSDKService }             from '../platform-server-sdk/';
 
 @Component({
     
