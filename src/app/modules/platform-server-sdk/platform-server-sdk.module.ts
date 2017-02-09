@@ -1,13 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { PlatformServerSdkRoutingModule } from './platform-server-sdk-routing.module';
-import { PlatformServerSdkComponent } from './platform-server-sdk.component';
+import { NgModule }                         from '@angular/core';
+import { CommonModule }                     from '@angular/common';
+import { PlatformServerSDKConfig }          from './platform-server-sdk-routing.config';
+import { PlatformServerSDKRoutingModule }   from './platform-server-sdk-routing.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    PlatformServerSdkRoutingModule
-  ],
-  declarations: [PlatformServerSdkComponent]
+    
+    imports: [
+        
+        CommonModule,
+        PlatformServerSDKRoutingModule
+        
+    ]
+    
 })
 export class PlatformServerSdkModule { }
