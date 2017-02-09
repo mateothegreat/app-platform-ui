@@ -21,10 +21,10 @@ import { PlatformServerSDKRoutingModule }   from './platform-server-sdk-routing.
 })
 export class PlatformServerSDKModule { 
     
-    constructor(private _service: PlatformServerSDKService): void {
+    // constructor(private _service: PlatformServerSDKService): void {
     
-        console.log('PlatformServerSDKModule.constructor: ' + _service);    
+    //     console.log('PlatformServerSDKModule.constructor: ' + _service);    
         
-    }
+    // }
     
 }
