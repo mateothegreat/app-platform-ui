@@ -1,4 +1,4 @@
-import { Injectable, Inject }               from 'angular2/core';
+import { Injectable, Inject }               from '@angular2/core';
 import { List }                             from 'immutable';
 import { Subject }                          from "rxjs/Subject";
 import { Observer }                         from "rxjs/Observer";
