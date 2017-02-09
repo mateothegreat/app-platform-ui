@@ -13,8 +13,6 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { SettingsComponent } from './settings/settings.component';
 import { DesktopComponent } from './desktop/desktop.component';
 import { StatsComponent } from './dashboard/stats/stats.component';
-import { UserComponent } from './user/user.component';
-import { SessionComponent } from './user/session/session.component';
 import { IBAccountComponent } from './settings/ibaccount/ibaccount.component';
 
 import { routes } from './app.routes';
@@ -30,8 +28,6 @@ import { SettingsOverviewComponent } from './settings/settings-overview/settings
         SettingsComponent,
         DesktopComponent,
         StatsComponent,
-        UserComponent,
-        SessionComponent,
         IBAccountComponent,
         SettingsOverviewComponent
 
@@ -45,7 +41,7 @@ import { SettingsOverviewComponent } from './settings/settings-overview/settings
         FormsModule,
         HttpModule, 
         
-        NgSemanticModule 
+        NgSemanticModule,
     
     ],
     
