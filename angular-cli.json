@@ -4,31 +4,65 @@
         "name": "app-platform-ui"
     },
     "apps": [{
-        "root": "src",
-        "outDir": "dist",
-        "assets": [
-            "assets"
-        ],
-        "index": "index.html",
-        "main": "main.ts",
-        "test": "test.ts",
+        
         "tsconfig": "tsconfig.json",
-        "prefix": "app",
-        "mobile": false,
+        "root":     "src",
+        "main":     "main.ts",
+        "test":     "test.ts",
+        "index":    "index.html",
+        "outDir":   "dist",
+        "prefix":   "",
+        "mobile":   false,
+        
+        "assets": ["assets"],
         "styles": [
+            
             "assets/styles.css",
             "../node_modules/semantic-ui/dist/semantic.min.css"
+            
         ],
         "scripts": [
+            
             "../node_modules/jquery/dist/jquery.min.js",
             "../node_modules/semantic-ui/dist/semantic.min.js"
+            
         ],
         "environments": {
-            "source": "environments/environment.ts",
-            "dev": "environments/environment.ts",
-            "prod": "environments/environment.prod.ts"
+            
+            "source":   "environments/environment.ts",
+            "dev":      "environments/environment.ts",
+            "prod":     "environments/environment.prod.ts"
+            
         }
+        
     }],
+    
+    "defaults": {
+        
+        "styleExt":         "css",
+        "flat":             false,
+        "prefixInterfaces": false,
+        
+        "inline": {
+            
+            "style":        false,
+            "template":     false
+            
+        },
+        
+        "spec": {
+            
+            "class":        false,
+            "component":    false,
+            "directive":    false,
+            "module":       false,
+            "pipe":         false,
+            "service":      false
+            
+        }
+        
+    },
+    
     "e2e": {
         "protractor": {
             "config": "./protractor.conf.js"
@@ -38,21 +72,6 @@
         "karma": {
             "config": "./karma.conf.js"
         }
-    },
-    "defaults": {
-        "styleExt": "css",
-        "prefixInterfaces": false,
-        "inline": {
-            "style": false,
-            "template": false
-        },
-        "spec": {
-            "class": false,
-            "component": true,
-            "directive": true,
-            "module": false,
-            "pipe": true,
-            "service": true
-        }
     }
+    
 }
