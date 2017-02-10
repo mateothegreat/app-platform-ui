@@ -1,2 +1,5 @@
-<div class="dataTables_length" id="example_length"><label>Show <div class="selection ui dropdown" tabindex="0"><select name="example_length" aria-controls="example"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select><i class="dropdown icon"></i><div class="text">10</div><div class="menu" tabindex="-1"><div class="item active selected" data-value="10">10</div><div class="item" data-value="25">25</div><div class="item" data-value="50">50</div><div class="item" data-value="100">100</div></div></div> entries</label></div>
-            
+<sm-select [model]="options" class="fluid search" (onChange)="onChange($event)">
+
+    <option *ngFor="let option of options">{{ option }} per page</option>
+
+</sm-select>

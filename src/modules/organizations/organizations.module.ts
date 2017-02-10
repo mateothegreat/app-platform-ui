@@ -3,7 +3,7 @@ import { CommonModule }                         from '@angular/common';
 import { DataTableModule }                      from './../data-table/data-table.module';
 import { OrganizationsComponent }               from './organizations.component';
 import { OrganizationsRoutingModule }           from './organizations-routing.module';
-// import { PlatformServerSDKModule }              from '../platform-server-sdk/platform-server-sdk.module';
+import { PlatformServerSDKModule }              from '../platform-server-sdk/platform-server-sdk.module';
 
 @NgModule({
     
@@ -11,7 +11,7 @@ import { OrganizationsRoutingModule }           from './organizations-routing.mo
         
         CommonModule,
         DataTableModule,
-        // PlatformServerSDKModule,
+        PlatformServerSDKModule,
         OrganizationsRoutingModule,
     
     ],

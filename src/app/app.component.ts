@@ -4,7 +4,7 @@ import 'rxjs/add/operator/mergeMap';
 
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
-import { PlatformServerSDKService }             from '../platform-server-sdk/platform-server-sdk.service';
+import { PlatformServerSDKService }             from './../modules/platform-server-sdk/platform-server-sdk.service';
 
 @Component({
   

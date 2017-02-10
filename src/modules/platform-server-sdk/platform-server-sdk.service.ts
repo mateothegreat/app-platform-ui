@@ -9,12 +9,20 @@ import { UserApi, User, LoopBackAuth,SDKBrowserModule }                   from '
 @Injectable()
 export class PlatformServerSDKService {
 
-    constructor() {
-        
+    constructor(b: SDKBrowserModule) {
+
         console.log('PlatformServerSDKService.constructor()');
         
-        let a = SDKBrowserModule.forRoot();
-        console.log(a);
+        // let a = SDKBrowserModule.forRoot();
+
+        // console.log(a);
+        console.log(b);
+        
+    }
+    
+    sessionCheck() {
+        
+        
         
     }
     // constructor( private _userService: UserApi) {

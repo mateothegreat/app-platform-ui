@@ -6,7 +6,7 @@ import { RouterModule, Router }                 from '@angular/router';
 
 // import { SDKBrowserModule }                     from '../modules/platform-server-sdk/lib/serversdk/index';
 
-import { PlatformServerSDKModule }              from 'modules/platform-server-sdk/platform-server-sdk.module';
+import { PlatformServerSDKModule }              from './../modules/platform-server-sdk/platform-server-sdk.module';
 // import { PlatformServerSDKService }             from '../modules/platform-server-sdk/platform-server-sdk.service';
 import { NgSemanticModule }                     from "ng-semantic/ng-semantic"
 
@@ -31,7 +31,7 @@ import { SettingsOverviewComponent }            from './settings/settings-overvi
         DesktopComponent,
         StatsComponent,
         IBAccountComponent,
-        SettingsOverviewComponent
+        SettingsOverviewComponent,
 
     ],
 

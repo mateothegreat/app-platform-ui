@@ -5,8 +5,8 @@ import { Subject }                          from "rxjs/Subject";
 import { Observer }                         from "rxjs/Observer";
 import { Observable }                       from "rxjs/Observable";
 import { BehaviorSubject }                  from "rxjs/Rx";
-// import *                 from './lib/serversdk/index';
-// import { PlatformServerSDKConfig }          from './platform-server-sdk.config';
+import { SDKBrowserModule }                 from './lib/serversdk/index';
+import { PlatformServerSDKConfig }          from './platform-server-sdk.config';
 import { PlatformServerSDKService }         from './platform-server-sdk.service';
 // import { PlatformServerSDKRoutingModule }   from './platform-server-sdk-routing.module';
 
@@ -14,8 +14,6 @@ import { PlatformServerSDKService }         from './platform-server-sdk.service'
 export class PlatformServerSDKModule { 
     
     static forRoot(): ModuleWithProviders {
-        
-        console.log('PlatformServerSDKModule.forRoot():ModuleWithProviders');    
 
         return {
             
@@ -23,7 +21,8 @@ export class PlatformServerSDKModule {
             
             providers : [
                 
-                PlatformServerSDKService
+                PlatformServerSDKService,
+                SDKBrowserModule
                 // LoopBackAuth,
                 // LoggerService,
                 // JSONSearchParams,

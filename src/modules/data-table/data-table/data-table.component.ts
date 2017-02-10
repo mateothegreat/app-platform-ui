@@ -1,7 +1,8 @@
 import {
   Component, Input, Output, SimpleChange, EventEmitter,
-  OnChanges
+  OnChanges, ViewChild, ViewChildren, QueryList, Directive, AfterViewInit
 } from '@angular/core';
+import { DataTableColumnComponent } from '../data-table.components';
 
 @Component({
   selector: 'data-table',
@@ -13,12 +14,19 @@ export class DataTableComponent implements OnChanges {
   @Input() datasource:Array<any> = [];
   @Input() settings: Object = {};
 
+  @ViewChildren(DataTableColumnComponent) columns: QueryList<DataTableColumnComponent>;
+
   @Output() public rowSelect: EventEmitter<any> = new EventEmitter<any>();
   
   constructor() { }
 
+  ngAfterViewInit() {
+
+    console.log(this.columns);
+    
+  }
   ngOnChanges(changes: { [propertyName: string]: SimpleChange }): void {
-    console.log(changes);
+    // console.log(changes);
     
     // if (this.grid) {
     //   if (changes['settings']) {

@@ -1,30 +1,31 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { DATA_TABLE_DIRECTIVES } from './data-table.directives';
-import { DataTableOptionLimitsComponent } from './data-table-option-limits/data-table-option-limits.component';
-import { DataTableOptionSearchComponent } from './data-table-option-search/data-table-option-search.component';
-// import { DataTableComponent } from './data-table/data-table.component';
+import { NgModule }                                 from '@angular/core';
+import { CommonModule }                             from '@angular/common';
+import { NgSemanticModule }                         from "ng-semantic/ng-semantic"
+import { DATA_TABLE_DIRECTIVES }                    from './data-table.directives';
+import { DATA_TABLE_COMPONENTS }                    from './data-table.components';
 
 @NgModule({
-  imports: [
     
-    CommonModule,
+    imports: [
     
-  ],
-  declarations: [
+        CommonModule,
+        NgSemanticModule
     
-    ...DATA_TABLE_DIRECTIVES,
+    ],
     
-    DataTableOptionLimitsComponent,
+    declarations: [
     
-    DataTableOptionSearchComponent
+        ...DATA_TABLE_DIRECTIVES,
+        ...DATA_TABLE_COMPONENTS,
+        
+    ],
     
-  ],
-  exports: [
+    exports: [
     
-    ...DATA_TABLE_DIRECTIVES
+        ...DATA_TABLE_DIRECTIVES,
+        ...DATA_TABLE_COMPONENTS,
     
-  ]
-  
+    ]
+
 })
 export class DataTableModule { }

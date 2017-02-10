@@ -2,7 +2,12 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'data-table-option-search',
-  templateUrl: './data-table-option-search.component.html'
+  template: `
+  
+    <div id="example_filter" class="dataTables_filter ui input"><label>Search:<input type="search" class="" placeholder="" aria-controls="example"></label></div>
+            
+  `
+  
 })
 export class DataTableOptionSearchComponent implements OnInit {
 

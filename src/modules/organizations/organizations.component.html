@@ -1,5 +1,18 @@
-<p>
-    organizations works!
-</p>
+<h2 class="ui header">
+    <i class="settings icon"></i>
+    <div class="content">
+        Account Settings
+        <div class="sub header">Manage your preferences</div>
+    </div>
+</h2>
 
-<data-table [datasource]="['datasource']"></data-table>
+<data-table [datasource]="['datasource']" sorting="true">
+
+    <data-table-column-definitions>
+
+        <data-table-column propertyName="id" label="#"></data-table-column>
+        <data-table-column propertyName="company" label="Customer Name"></data-table-column>
+
+    </data-table-column-definitions>
+
+</data-table>
