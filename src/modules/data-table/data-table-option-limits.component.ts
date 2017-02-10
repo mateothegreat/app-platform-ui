@@ -1,11 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Directive, Input, Output, HostBinding, EventEmitter, ElementRef, HostListener, AfterContentInit, ContentChild, Renderer } from '@angular/core';
 
 @Component({
     
     selector: 'data-table-option-limits',
     template: `
     
-        <sm-select [model]="options" class="fluid search" (onChange)="onChange($event)">
+        <sm-select [model]="model" class="fluid search" (onChange)="onChange($event)" style="width: 100px">
 
             <option *ngFor="let option of options" value="{{ option }}">{{ option }} per page</option>
         
@@ -14,17 +14,40 @@ import { Component, Input } from '@angular/core';
     `
     
 })
-export class DataTableOptionLimitsComponent {
+export class DataTableOptionLimitsComponent implements AfterContentInit {
 
-    options: Array<Number> = [10, 25, 50, 100];
-    
-    constructor() { }
+    @Input() model: Number = 10;
+    @Input() options: Array<Number> = [10, 25, 50, 100];
     
     onChange(data: {}) {
      
         console.log(data);
-    
         
     }
+    public constructor(public el:ElementRef, public renderer:Renderer) {
+        
+        // this._service = new SuiDropdownService();
+        // this._service.dropdownElement = el;
+    }
 
+    public ngAfterContentInit():void {
+
+        this.model = 10;
+
+    }
+
+    @HostListener('click', ['$event'])
+    public click(event:MouseEvent):boolean {
+        
+        // console.log(event);
+        // event.stopPropagation();
+
+        // if (!this._service.menuElement.nativeElement.contains(event.target)) {
+        //     this._service.toggle();
+        // }
+        
+        return false;
+        
+    }
+    
 }
