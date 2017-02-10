@@ -4,6 +4,7 @@ import 'rxjs/add/operator/mergeMap';
 
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { PlatformServerSDKService }             from '../platform-server-sdk/platform-server-sdk.service';
 
 @Component({
   
@@ -17,8 +18,14 @@ export class AppComponent implements OnInit {
   
   constructor(
     private router: Router,
-    private activatedRoute: ActivatedRoute
-  ) {}
+    private activatedRoute: ActivatedRoute,
+    private _ds: PlatformServerSDKService
+  ) {
+    
+      console.log('AppComponent.constructor()');
+      console.log(_ds);
+    
+  }
   ngOnInit() {
     // this.router.events
     //   .filter(event => event instanceof NavigationEnd)

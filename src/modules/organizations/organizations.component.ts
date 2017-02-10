@@ -1,6 +1,5 @@
 import { Component, OnInit }                    from '@angular/core';
-import { PlatformServerSDKService }             from '../platform-server-sdk';
-import { UserApi } from '../platform-server-sdk/lib/serversdk';
+// import { PlatformServerSDKService }             from '../platform-server-sdk/platform-server-sdk.service';
 
 @Component({
     
@@ -14,10 +13,10 @@ export class OrganizationsComponent implements OnInit {
     
     datasource:Array<any> = [];
     
-    // constructor(private _platformService: UserApi) { 
-    constructor() {
+    constructor() { 
+    // constructor(private _ds: PlatformServerSDKService) {
         console.log('OrganizationsComponent.constructor: ');
-        // console.log(_platformService);
+        // console.log(_ds);
 
     }
     

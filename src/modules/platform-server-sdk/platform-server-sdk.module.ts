@@ -1,37 +1,44 @@
-import { NgModule }                         from '@angular/core';
 import { CommonModule }                     from '@angular/common';
+import { NgModule, ModuleWithProviders }    from '@angular/core';
 import { List }                             from 'immutable';
 import { Subject }                          from "rxjs/Subject";
 import { Observer }                         from "rxjs/Observer";
 import { Observable }                       from "rxjs/Observable";
 import { BehaviorSubject }                  from "rxjs/Rx";
-import { SDKBrowserModule }                 from './lib/serversdk/index';
-import { PlatformServerSDKConfig }          from './platform-server-sdk.config';
+// import *                 from './lib/serversdk/index';
+// import { PlatformServerSDKConfig }          from './platform-server-sdk.config';
 import { PlatformServerSDKService }         from './platform-server-sdk.service';
-import { PlatformServerSDKRoutingModule }   from './platform-server-sdk-routing.module';
+// import { PlatformServerSDKRoutingModule }   from './platform-server-sdk-routing.module';
 
-@NgModule({
+@NgModule({})
+export class PlatformServerSDKModule { 
     
-    imports: [
+    static forRoot(): ModuleWithProviders {
         
-        CommonModule,
-        // SDKModule.forRoot(),
-        // PlatformServerSDKRoutingModule
-        
-    ],
-    
-    // providers: [ UserApi ]
-    
-})
-export class PlatformServerSDKModule extends SDKBrowserModule { 
-    
-    // constructor(private _service: PlatformServerSDKService) {
-    constructor() {
-        
-        super();
-        
-        console.log('PlatformServerSDKModule.constructor()');    
-    //     // console.log(u);
+        console.log('PlatformServerSDKModule.forRoot():ModuleWithProviders');    
+
+        return {
+            
+            ngModule  : PlatformServerSDKModule,
+            
+            providers : [
+                
+                PlatformServerSDKService
+                // LoopBackAuth,
+                // LoggerService,
+                // JSONSearchParams,
+                // SDKModels,
+                // UserApi,
+                // OrganizationApi,
+                // ContactApi,
+                // AddressApi,
+                // internalStorageProvider,
+                
+                // { provide: SDKStorage, useClass: StorageBrowser }
+                
+            ]
+            
+        };
         
     }
     
