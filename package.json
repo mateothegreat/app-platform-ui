@@ -27,7 +27,7 @@
     "@ngtools/webpack": "1.8.0",
     "core-js": "^2.4.1",
     "immutable": "^3.8.1",
-    "jquery": "^3.1.1",
+    "jquery": "^3.3.1",
     "ng-semantic": "https://github.com/vladotesanovic/ngSemantic/tarball/master",
     "rxjs": "^5.0.1",
     "semantic-ui": "^2.2.7",
