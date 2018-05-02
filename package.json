@@ -38,7 +38,7 @@
     "@angular/cli": "^1.0.0-beta.30",
     "@angular/compiler-cli": "5.0.1",
     "@types/jasmine": "2.6.3",
-    "@types/node": "^8.0.51",
+    "@types/node": "^10.0.3",
     "codelyzer": "~4.0.1",
     "gulp": "^3.9.1",
     "jasmine-core": "2.8.0",
